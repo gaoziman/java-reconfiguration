@@ -7,6 +7,6 @@ package com.trs;
  */
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        System.out.println("Hello world!  1213 123");
     }
 }
