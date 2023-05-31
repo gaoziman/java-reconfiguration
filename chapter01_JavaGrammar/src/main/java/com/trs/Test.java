@@ -7,6 +7,11 @@ package com.trs;
  */
 public class Test {
     public static void main(String[] args) {
-        System.out.println("cisyam 开发了一个新功能");
+        System.out.println("cisyam 开发了一个新功能 ");
+        System.out.println("cisyam 开发了一个新功能 ");
+        System.out.println("cisyam 开发了一个新功能 ");
+        System.out.println("cisyam 开发了一个新功能 ");
+        System.out.println("cisyam 开发了一个新功能 ");
+
     }
 }
