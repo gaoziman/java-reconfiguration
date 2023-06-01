@@ -37,7 +37,8 @@ public class ListDemo1 {
         // 新集合
         List<String> newList = new ArrayList<>(list.size());
         list.forEach(i -> {
-            if (!newList.contains(i)) { // 如果新集合中不存在则插入
+            if (!newList.contains(i)) {
+                // 如果新集合中不存在则插入
                 newList.add(i);
             }
         });
