@@ -1,5 +1,8 @@
-package com.trs;
+package com.trs.demo01;
 
+/**
+ * @author gaoziman
+ */
 public class TestEscapeCharacter {
     public static void main(String[] args){
         System.out.println("hello\t\tjava");

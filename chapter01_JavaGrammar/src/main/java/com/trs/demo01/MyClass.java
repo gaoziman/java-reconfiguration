@@ -1,4 +1,4 @@
-package com.trs;
+package com.trs.demo01;
 
 public class MyClass {
 //    static int e = 100;
