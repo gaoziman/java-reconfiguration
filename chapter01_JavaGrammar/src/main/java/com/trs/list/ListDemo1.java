@@ -1,7 +1,9 @@
 package com.trs.list;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author : gaoziman
@@ -21,17 +23,21 @@ public class ListDemo1 {
         list.add("aaa");
         list.add("abc");
         list.add("xyz");
-        list.add("123");
+        list.add("1234");
         list.add("xyz");
-        System.out.println("原来的集合 = " + list);
+//        System.out.println("原来的集合 = " + list);
+//        new HashSet<>(list).forEach(s-> System.out.print(s));
 
-        method(list);
+        list.stream().filter(s -> s.length() >3)
+                .forEach(System.out::println);
+
+//        method(list);
     }
 
 
     /**
      * 自定义去重
-     * @param list
+     * @param list  1
      */
     public static void method(List<String> list) {
         // 新集合
