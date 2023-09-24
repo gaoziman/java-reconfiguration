@@ -10,6 +10,7 @@ public class User {
 
     private static String name;
 
+
     public void setName(String name) {
         this.name = name;
     }

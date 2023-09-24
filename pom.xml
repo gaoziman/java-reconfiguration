@@ -11,6 +11,7 @@
     <modules>
         <module>chapter01_JavaGrammar</module>
         <module>chapter_function</module>
+        <module>chapter02_Arrays</module>
     </modules>
 
     <properties>
