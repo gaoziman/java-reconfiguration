@@ -5,13 +5,19 @@ import org.junit.jupiter.api.Test;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.Writer;
 
 /**
  * @author : Leo
  * @version 1.0
  * @date 2023/9/24/024 22:30
- * @description : FileReader01
+ * @description : FileReader相关操作
+ *
+    1)new FileReader(File/String)
+    2)read每次读取单个字符，返回该字符，如果到文件末尾返回-1
+    3)read(char[):批量读取多个字符到数组，返回读取到的字符数，如果到文件末尾返回-1
+    相关API:
+    1)new String(char[):将char【】转换成String
+    2)new String(char[l,off,Ien):将char[I的指定部分转换成String
  */
 public class FileReader01 {
     public static void main(String[] args)

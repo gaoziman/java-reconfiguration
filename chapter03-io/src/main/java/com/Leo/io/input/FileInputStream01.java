@@ -61,7 +61,7 @@ public class FileInputStream01 {
         byte[] bytes = new byte[1024];
 
         // 创建FileInputStream 对象， 用于文件的读取
-        try {
+         try {
             // len如果返回-1, 代表文件读取完毕, 否则循环读取 如果读取正常, 则返回实际读取的字节
             fis =  new FileInputStream("E:/test.txt");
             while ((len = fis.read(bytes)) != -1)
