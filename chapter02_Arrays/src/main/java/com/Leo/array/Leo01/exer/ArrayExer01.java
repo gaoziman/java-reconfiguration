@@ -1,4 +1,4 @@
-package com.Leo.array.Leo01;
+package com.Leo.array.Leo01.exer;
 
 import java.util.ArrayList;
 import java.util.Arrays;
