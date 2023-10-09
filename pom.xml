@@ -13,6 +13,7 @@
         <module>chapter_function</module>
         <module>chapter02_Arrays</module>
         <module>chapter03-io</module>
+        <module>chapter04-oop</module>
     </modules>
 
     <properties>
