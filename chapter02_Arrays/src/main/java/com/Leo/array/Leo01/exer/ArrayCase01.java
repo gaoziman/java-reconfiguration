@@ -1,7 +1,6 @@
 package com.Leo.array.Leo01.exer;
 
-import java.util.Arrays;
-import java.util.Scanner;
+
 
 /**
  * @author : Leo
@@ -15,17 +14,19 @@ import java.util.Scanner;
  */
 public class ArrayCase01
 {
-    
+
     public static void main(String[] args)
     {
 
         char[] chars = new char[26];
 
         for (int i = 0; i <chars.length; i++) {
-                chars[i]  = (char) ('A' + i);
-                System.out.print(chars[i] + " ");
+            chars[i]  = (char) ('A' + i);
+            System.out.print(chars[i] + " ");
         }
 
         System.out.println("初始化的字符数组:  " + new String(chars));
     }
 }
+
+
