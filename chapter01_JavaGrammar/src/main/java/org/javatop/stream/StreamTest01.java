@@ -1,8 +1,5 @@
-package com.trs.stream;
+package org.javatop.stream;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;

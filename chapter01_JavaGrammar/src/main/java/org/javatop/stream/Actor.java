@@ -1,4 +1,4 @@
-package com.trs.stream;
+package org.javatop.stream;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

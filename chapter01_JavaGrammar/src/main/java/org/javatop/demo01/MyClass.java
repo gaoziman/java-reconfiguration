@@ -1,4 +1,4 @@
-package com.trs.demo01;
+package org.javatop.demo01;
 
 public class MyClass {
 //    static int e = 100;

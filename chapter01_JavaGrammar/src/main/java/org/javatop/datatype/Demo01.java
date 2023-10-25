@@ -1,4 +1,4 @@
-package com.trs.datatype;
+package org.javatop.datatype;
 
 /**
  * @author : gaoziman
