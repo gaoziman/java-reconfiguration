@@ -18,7 +18,7 @@ public class ImageFileRenamer {
 
     public static void main(String[] args) {
         // 替换为你的文件夹路径
-        Path pathToDirectory = Paths.get("G:/Leo-Data/★ 叩丁狼-vue3课程/day05/imgs");
+        Path pathToDirectory = Paths.get("G:\\toNewLeoJavaer\\★ 路飞学城 新版 Python全栈开发\\第01模块：Python基础（V2.0版）\\模块1\\day08 阶段总结和考试\\笔记\\assets");
         try {
             Files.walkFileTree(pathToDirectory, new SimpleFileVisitor<Path>() {
                 @Override
