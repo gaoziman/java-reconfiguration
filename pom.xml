@@ -10,10 +10,11 @@
     <packaging>pom</packaging>
     <modules>
         <module>chapter01_JavaGrammar</module>
-        <module>chapter_function</module>
         <module>chapter02_Arrays</module>
         <module>chapter03-io</module>
         <module>chapter04-oop</module>
+        <module>chapter06_socket</module>
+        <module>chapter07_thread</module>
     </modules>
 
     <properties>
