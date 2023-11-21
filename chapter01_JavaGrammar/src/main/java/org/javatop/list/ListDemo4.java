@@ -28,7 +28,6 @@ public class ListDemo4 {
 
     /**
      * 使用 LinkedHashSet 去重
-     * @param list
      */
     public static void method(List<Integer> list) {
         LinkedHashSet<Integer> set = new LinkedHashSet<>(list);

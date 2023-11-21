@@ -1,5 +1,6 @@
 package org.javatop.stream;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,6 +15,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Actor {
+
+
     /*编写一个演员类 有 演员id演员名称和演员年龄 演员作品 */
 
     private Integer id;
