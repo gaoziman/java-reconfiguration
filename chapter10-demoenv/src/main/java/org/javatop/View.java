@@ -43,7 +43,7 @@ public class View {
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
                 String formattedTime = currentTime.format(formatter);
                 try {
-                    // 创建URL对象
+                    // 创建URL对象2
                     URL obj = new URL(url);
                     // 打开连接
                     HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
