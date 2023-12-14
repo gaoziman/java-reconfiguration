@@ -2,10 +2,7 @@ package org.javatop.list;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.TreeSet;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -95,5 +92,61 @@ public class ListDeduplication {
                 .distinct()
                 .collect(Collectors.toList());
         System.out.println(listWithoutDuplicates);
+    }
+
+
+    /**
+     * 测试5
+     */
+    @Test
+    public void test5() {
+        // 写一个Java冒泡排序
+        int[] array = {  5, 6, 7, 2, 9,1, 2, 3, 4,
+                };
+        for (int i = 0; i < array.length - 1; i++) {
+            for (int j = 0; j < array.length - 1 - i; j++) {
+                if (array[j] > array[j + 1]) {
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(array));
+        System.out.println("------------------------------------------------------");
+        // 写一个选择排序并从大到小进行排序
+        for (int i = 0; i < array.length - 1; i++) {
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[i] < array[j]) {
+                    int temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(array));
+    }
+
+    /**
+     * 测试6
+     */
+    @Test
+    public void test6() {
+        // 写一个图片上传的功能
+        for (int i = 0; i < 100; i++) {
+            System.out.println(i);
+            try {
+                Thread.sleep(1000);
+            }
+            catch (InterruptedException e) {
+                e.printStackTrace();
+                return;
+
+            }
+            if (i == 50) {
+                System.out.println("上传成功");
+                return;
+            }
+        }
     }
 }
