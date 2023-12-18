@@ -9,7 +9,7 @@ package com.Leo.array.Leo01;
 public class Test {
 
     /**
-     *  用于测试:
+     * 用于测试:
      */
     @org.junit.jupiter.api.Test
     public void test01() {

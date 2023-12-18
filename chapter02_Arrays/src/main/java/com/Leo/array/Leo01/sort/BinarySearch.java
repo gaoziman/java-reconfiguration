@@ -8,7 +8,7 @@ package com.Leo.array.Leo01.sort;
  */
 public class BinarySearch {
     public static void main(String[] args) {
-        int[] data = {11,12,13,14,15,16,17,18,19,20};
+        int[] data = {11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
         int index = binarySearch(data, 18);
         System.out.println(index);
     }
@@ -20,13 +20,13 @@ public class BinarySearch {
         //结束下标
         int endPos = data.length - 1;
 
-        while (beginPos <=endPos) {
-            int midPos = (beginPos + endPos)/2;
+        while (beginPos <= endPos) {
+            int midPos = (beginPos + endPos) / 2;
             if (value == data[midPos]) {
                 return midPos;
-            }else if (value > data[midPos]) {
+            } else if (value > data[midPos]) {
                 beginPos = midPos + 1;
-            }else if (value < data[midPos]) {
+            } else if (value < data[midPos]) {
                 endPos = midPos - 1;
             }
         }

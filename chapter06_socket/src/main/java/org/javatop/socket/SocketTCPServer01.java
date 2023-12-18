@@ -16,10 +16,10 @@ public class SocketTCPServer01 {
     public static void main(String[] args) throws IOException {
 
         /*
-            * 1. 在本机的8888端口监听, 等待连接
-            * 细节: 要求在本机没有其它服务在监听9999
-            * 细节：这个 ServerSocket 可以通过 accept() 返回多个Socket[多个客户端连接服务器的并发]
-        */
+         * 1. 在本机的8888端口监听, 等待连接
+         * 细节: 要求在本机没有其它服务在监听9999
+         * 细节：这个 ServerSocket 可以通过 accept() 返回多个Socket[多个客户端连接服务器的并发]
+         */
 
         ServerSocket serverSocket = new ServerSocket(8888);
         System.out.println("服务端，在8888端口监听，等待连接..");
@@ -28,14 +28,14 @@ public class SocketTCPServer01 {
 
         Socket socket = serverSocket.accept();
 
-        System.out.println("服务端 socket ="+socket.getClass());
+        System.out.println("服务端 socket =" + socket.getClass());
         //
         //3. 通过socket.getInputStream() 读取客户端写入到数据通道的数据, 显示
         InputStream is = socket.getInputStream();
         //4. 通过IO流读取
         byte[] buf = new byte[1024];
         int readLen = 0;
-        while((readLen = is.read(buf))!=-1){
+        while ((readLen = is.read(buf)) != -1) {
             //根据读取到的实际长度，显示内容.
             System.out.println(new String(buf, 0, readLen));
         }

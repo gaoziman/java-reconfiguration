@@ -25,9 +25,10 @@ public class ListDemo3 {
         System.out.println("原集合:" + list);
         method(list);
     }
- 
+
     /**
      * 使用 HashSet 去重
+     *
      * @param list
      */
     public static void method(List<Integer> list) {

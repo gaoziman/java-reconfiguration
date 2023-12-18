@@ -31,6 +31,7 @@ public class ListDemo2 {
 
     /**
      * 使用迭代器去重
+     *
      * @param list
      */
     public static void method(List<String> list) {

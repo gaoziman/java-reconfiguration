@@ -11,10 +11,8 @@ import java.util.Scanner;
  * @date 2023/9/25/025 22:33
  * @description : 用于测试: 使用递归的方式缩减数组
  */
-public class ArrayReduction02
-{
-    public static void main(String[] args)
-    {
+public class ArrayReduction02 {
+    public static void main(String[] args) {
 
         int[] array = {1, 2, 3, 4, 5};
 
@@ -29,7 +27,7 @@ public class ArrayReduction02
     }
 
 
-    public static void reduceArray(int[] array, int index, Scanner scanner){
+    public static void reduceArray(int[] array, int index, Scanner scanner) {
         System.out.println("当前数组: " + Arrays.toString(array));
 
         if (index >= 0) {

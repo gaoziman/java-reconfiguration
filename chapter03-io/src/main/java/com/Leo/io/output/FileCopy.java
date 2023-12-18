@@ -20,16 +20,15 @@ public class FileCopy {
 
 
     /**
-    * 用于测试: 文件的拷贝
-    */
+     * 用于测试: 文件的拷贝
+     */
     @Test
-    public void testFileCopy()
-    {
+    public void testFileCopy() {
 
         // 创建一个文件输入流和一个文件输出流 先读后写
 
-        FileInputStream  fis = null;
-        FileOutputStream fos  = null;
+        FileInputStream fis = null;
+        FileOutputStream fos = null;
         int len = 0;
 
         try {
@@ -38,8 +37,7 @@ public class FileCopy {
 
             byte[] bytes = new byte[1024];
             // 边读边写
-            while ((len = fis.read(bytes)) != -1)
-            {
+            while ((len = fis.read(bytes)) != -1) {
                 fos.write(bytes, 0, len);
             }
             System.out.println("拷贝图片成功!");

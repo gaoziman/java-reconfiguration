@@ -17,76 +17,58 @@ public class DirectoryInformation {
     }
 
 
-
     /**
-    * 用于测试: 文件小练习
-    */
+     * 用于测试: 文件小练习
+     */
     @Test
-    public void testFile()
-    {
+    public void testFile() {
         File file = new File("e:/2023-File.txt");
-        if (file.exists())
-        {
-            if (file.delete())
-            {
+        if (file.exists()) {
+            if (file.delete()) {
                 System.out.println("文件删除成功!");
-            }else
-            {
+            } else {
                 System.out.println("文件删除失败!");
             }
-        }else
-        {
+        } else {
             System.out.println("该文件不存在!");
         }
 
     }
 
 
-    
     /**
-    * 用于测试: 目录练习测试 注意： 删除目录的时候，目录下的有文件的时候会删除失败
-    */
+     * 用于测试: 目录练习测试 注意： 删除目录的时候，目录下的有文件的时候会删除失败
+     */
     @Test
-    public void testDirectory()
-    {
+    public void testDirectory() {
         File file = new File("e:/2023");
-        if (file.exists())
-        {
-            if (file.delete())
-            {
+        if (file.exists()) {
+            if (file.delete()) {
                 System.out.println("目录删除成功!");
-            }else
-            {
+            } else {
                 System.out.println("目录删除失败!");
             }
-        }else
-        {
+        } else {
             System.out.println("该目录不存在!");
         }
     }
 
 
-
     /**
-    * 用于测试: 判断 e:/Java-2023/Leo/test目录是否存在，如果存在就提示已经存在，否则就创建
-    */
+     * 用于测试: 判断 e:/Java-2023/Leo/test目录是否存在，如果存在就提示已经存在，否则就创建
+     */
     @Test
-    public void test()
-    {
+    public void test() {
         File file = new File("e:/Java-2023/Leo/test");
-        if (file.exists())
-        {
+        if (file.exists()) {
             System.out.println("目录已存在!");
-        }else
-        {
-            if (file.mkdirs())
-            {
+        } else {
+            if (file.mkdirs()) {
                 System.out.println("目录创建成功!");
-            }else
-            {
-               System.out.println("目录创建失败!");
+            } else {
+                System.out.println("目录创建失败!");
             }
         }
     }
-    
+
 }

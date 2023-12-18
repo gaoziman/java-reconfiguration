@@ -10,15 +10,13 @@ import java.io.*;
  * @date 2023/9/25/025 15:07
  * @description : InputStreamWriter 写入文件 解决乱码问题 转换流 可以把字节流转为字符流 并且设置编码
  */
-public class OutputStreamWriter01
-{
+public class OutputStreamWriter01 {
 
     /**
-    * 用于测试: InputStreamReader 读取文件并设置 编码
-    */
+     * 用于测试: InputStreamReader 读取文件并设置 编码
+     */
     @Test
-    public void testInputStreamReader01() throws IOException
-    {
+    public void testInputStreamReader01() throws IOException {
 
         // 1. 把FileOutputStream转成OutputStreamWriter 并设置编码
         OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("e:/2023-io/osw.txt"), "gbk");

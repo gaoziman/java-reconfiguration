@@ -7,7 +7,7 @@ package org.javatop.datatype;
  */
 public class Demo01 {
     public static void main(String[] args) {
-        byte b  = (byte)150 ;
+        byte b = (byte) 150;
         System.out.println("b = " + b);
 
         byte b1 = 127;

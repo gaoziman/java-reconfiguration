@@ -18,13 +18,11 @@ public class FileInformation {
     }
 
 
-
     /**
-    * 用于测试: 文件基本信息
-    */
+     * 用于测试: 文件基本信息
+     */
     @Test
-    public void testInfo01()
-    {
+    public void testInfo01() {
 
         File file = new File("E:/terrence/焊缝管口/焊缝管口数据表.txt");
         System.out.println("文件的名称: " + file.getName());
@@ -38,14 +36,11 @@ public class FileInformation {
     }
 
 
-
-
     /**
      * 用于测试: 文件基本信息
      */
     @Test
-    public void testInfo02()
-    {
+    public void testInfo02() {
 
         File f = new File("E:/terrence/焊缝管口/焊缝管口数据表.txt");
         System.out.println("============================================");
@@ -60,15 +55,13 @@ public class FileInformation {
         System.out.println("文件路径：" + f.getPath());
         System.out.println("绝对路径：" + f.getAbsolutePath());
     }
-    
-    
-    
+
+
     /**
-    * 用于测试: 遍历目录文件以及文件夹
-    */
+     * 用于测试: 遍历目录文件以及文件夹
+     */
     @Test
-    public void testErgodic()
-    {
+    public void testErgodic() {
         // 建立File变量,并设定由f变量变数引用
         File file = new File("E:/");
         System.out.println("文件名称\t\t文件类型\t\t文件大小");
@@ -81,7 +74,7 @@ public class FileInformation {
             System.out.print((new File("E:/", fileList[i])).isFile() ? "文件" + "\t\t" : "文件夹" + "\t\t");
             System.out.println((new File("E:/", fileList[i])).length() + "字节");
         }
-        
+
     }
 
 }

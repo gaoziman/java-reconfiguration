@@ -27,17 +27,17 @@ public class PrintWriter01 {
 
 
     /**
-    * 用于测试:PrintWriter 打印流的基本操作
-    */
+     * 用于测试:PrintWriter 打印流的基本操作
+     */
     @Test
     public void testPrintWriter01() throws IOException {
         StopWatch stopWatch = new StopWatch();
         // 开始时间
         stopWatch.start();
         // 执行时间
-        PrintWriter pw1  = new PrintWriter(new FileOutputStream("e:/2023-io/pw.txt"));
+        PrintWriter pw1 = new PrintWriter(new FileOutputStream("e:/2023-io/pw.txt"));
 
-        PrintWriter pw2  = new PrintWriter(Files.newOutputStream(Paths.get("e:/2023-io/pw.txt")));
+        PrintWriter pw2 = new PrintWriter(Files.newOutputStream(Paths.get("e:/2023-io/pw.txt")));
         pw2.write("Leo 你好222");
         pw2.close();
         // 结束时间
@@ -50,8 +50,8 @@ public class PrintWriter01 {
 
 
     /**
-    * 用于测试: PrintWriter
-    */
+     * 用于测试: PrintWriter
+     */
     @Test
     public void testPrintWriter02() throws IOException {
         PrintWriter pw = new PrintWriter(System.out);
@@ -77,7 +77,6 @@ public class PrintWriter01 {
         });
         System.out.println("time = " + time);
     }
-
 
 
 }
