@@ -28,8 +28,7 @@ public class HutoolTest {
      * 用于测试: hutool工具包
      */
     @Test
-    public void testHutool()
-    {
+    public void testHutool() {
 
         String now = DateUtil.now();
         System.out.println("now = " + now);
@@ -38,18 +37,16 @@ public class HutoolTest {
     }
 
 
-
     /**
      * 用于测试: hutool工具包
      */
     @Test
-    public void testHutool02()
-    {
+    public void testHutool02() {
         File file = FileUtil.file("E:/2023-IO/bw.txt");
-        WatchMonitor.createAll(file, new SimpleWatcher(){
+        WatchMonitor.createAll(file, new SimpleWatcher() {
             @Override
             public void onModify(WatchEvent<?> event, Path currentPath) {
-                System.out.println("EVENT modify" );
+                System.out.println("EVENT modify");
                 Console.log("EVENT modify");
             }
         }).start();
@@ -57,13 +54,11 @@ public class HutoolTest {
     }
 
 
-
     /**
      * 用于测试: hutool工具包
      */
     @Test
-    public void testHutool03()
-    {
+    public void testHutool03() {
         File file = FileUtil.file("E:/2023-IO/fosCopy2.jpg");
         String type = FileTypeUtil.getType(file);
         //输出 jpg则说明确实为jpg文件

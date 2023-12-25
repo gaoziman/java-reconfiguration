@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
  * @version 1.0
  * @date 2023-10-14 20:58
  * @description : 使用Java写一个方法遍历文件夹中的图片，如果图片名称是以 "【 " 开头，"】" 结尾,
-                  则删除以 "【" 开头，"】" 结尾的内容
+ * 则删除以 "【" 开头，"】" 结尾的内容
  */
 public class ImageFileRenamer {
 

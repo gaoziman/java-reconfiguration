@@ -13,35 +13,29 @@ import java.io.IOException;
  * @date 2023/9/25/025 11:21
  * @description : BufferedReader 练习
  */
-public class BufferedReader01
-{
-    public static void main(String[] args)
-    {
+public class BufferedReader01 {
+    public static void main(String[] args) {
 
     }
 
 
     /**
-    * 用于测试: BufferedReader读取文件
-    */
+     * 用于测试: BufferedReader读取文件
+     */
     @Test
     public void testBufferedReader01() throws FileNotFoundException {
 
         BufferedReader br = new BufferedReader(new FileReader("e:/2023-io/sort.txt"));
-        try
-        {
+        try {
             // 一行一行的读取 当时line为null的时候说明文件已经读取完毕
             String line = null;
-            while ((line = br.readLine()) != null)
-            {
+            while ((line = br.readLine()) != null) {
                 System.out.println(line);
             }
         } catch (IOException e) {
             e.printStackTrace();
-        } finally
-        {
-            try
-            {
+        } finally {
+            try {
                 br.close();
             } catch (IOException e) {
                 e.printStackTrace();

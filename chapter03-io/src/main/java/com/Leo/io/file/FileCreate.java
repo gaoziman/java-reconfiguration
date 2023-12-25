@@ -12,18 +12,16 @@ import java.io.IOException;
  * @description :
  */
 public class FileCreate {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
 
     }
 
 
     /**
-    * 用于测试: 创建一个文件
-    */
+     * 用于测试: 创建一个文件
+     */
     @Test
-    public void test01()
-    {
+    public void test01() {
         File file = new File("e://2023-File.txt");
         try {
             file.createNewFile();
@@ -32,4 +30,5 @@ public class FileCreate {
             throw new RuntimeException(e);
         }
 
-    }}
+    }
+}

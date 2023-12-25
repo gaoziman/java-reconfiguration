@@ -4,7 +4,7 @@ package org.javatop.demo01;
  * @author gaoziman
  */
 public class TestEscapeCharacter {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println("hello\t\tjava");
         System.out.println("hello\rjava");
         System.out.println("hello\njava");
@@ -13,7 +13,7 @@ public class TestEscapeCharacter {
         char shuang = '"';
         System.out.println(shuang + "hello" + shuang);
         System.out.println("'hello'");
-        char dan ='\'';
+        char dan = '\'';
         System.out.println(dan + "hello" + dan);
 
         System.out.println(" ================= ");

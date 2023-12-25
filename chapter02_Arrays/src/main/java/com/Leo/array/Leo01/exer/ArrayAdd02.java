@@ -7,12 +7,11 @@ import java.util.Scanner;
  * @version 1.0
  * @date 2023/10/09/024 11:06
  * @description : 数组拷贝
- *
  */
-public class ArrayAdd02 { 
+public class ArrayAdd02 {
 
-	//编写一个main方法
-	public static void main(String[] args) {
+    //编写一个main方法
+    public static void main(String[] args) {
 		/*
 		要求：实现动态的给数组添加元素效果，实现对数组扩容。
 		1.原始数组使用静态分配 int[] arr = {1,2,3}
@@ -28,36 +27,36 @@ public class ArrayAdd02 {
 		6. 创建一个 Scanner可以接受用户输入
 		7. 因为用户什么时候退出，不确定，使用 do-while + break来控制
 		 */
-		
-		Scanner myScanner = new Scanner(System.in);
-		//初始化数组
-		int[] arr = {1,2,3};
 
-		do {
-			int[] arrNew = new int[arr.length + 1];
-			//遍历 arr 数组，依次将arr的元素拷贝到 arrNew数组
-			for(int i = 0; i < arr.length; i++) {
-				arrNew[i] = arr[i];
-			}
-			System.out.println("请输入你要添加的元素");
-			int addNum = myScanner.nextInt();
-			//把addNum赋给arrNew最后一个元素
-			arrNew[arrNew.length - 1] = addNum;
-			//让 arr 指向 arrNew, 
-			arr = arrNew;
-			//输出arr 看看效果
-			System.out.println("====arr扩容后元素情况====");
-			for(int i = 0; i < arr.length; i++) {
-				System.out.print(arr[i] + "\t");
-			}
-			//问用户是否继续
-			System.out.println("是否继续添加 y/n");
-			char key = myScanner.next().charAt(0);
-			if( key == 'n') {
-				break;
-			}			
-		}while(true);
+        Scanner myScanner = new Scanner(System.in);
+        //初始化数组
+        int[] arr = {1, 2, 3};
 
-		System.out.println("你退出了添加...");
-	}
+        do {
+            int[] arrNew = new int[arr.length + 1];
+            //遍历 arr 数组，依次将arr的元素拷贝到 arrNew数组
+            for (int i = 0; i < arr.length; i++) {
+                arrNew[i] = arr[i];
+            }
+            System.out.println("请输入你要添加的元素");
+            int addNum = myScanner.nextInt();
+            //把addNum赋给arrNew最后一个元素
+            arrNew[arrNew.length - 1] = addNum;
+            //让 arr 指向 arrNew,
+            arr = arrNew;
+            //输出arr 看看效果
+            System.out.println("====arr扩容后元素情况====");
+            for (int i = 0; i < arr.length; i++) {
+                System.out.print(arr[i] + "\t");
+            }
+            //问用户是否继续
+            System.out.println("是否继续添加 y/n");
+            char key = myScanner.next().charAt(0);
+            if (key == 'n') {
+                break;
+            }
+        } while (true);
+
+        System.out.println("你退出了添加...");
+    }
 }

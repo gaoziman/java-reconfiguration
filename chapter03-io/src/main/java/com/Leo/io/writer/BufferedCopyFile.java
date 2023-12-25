@@ -10,59 +10,46 @@ import java.io.*;
  * @date 2023/9/25/025 11:32
  * @description : 使用Buffered进行文件拷贝
  */
-public class BufferedCopyFile
-{
-    public static void main(String[] args)
-    {
+public class BufferedCopyFile {
+    public static void main(String[] args) {
 
 
     }
 
 
-
     /**
-    * 用于测试: Buffered字符流进行文件拷贝
-    */
+     * 用于测试: Buffered字符流进行文件拷贝
+     */
     @Test
-    public void testBufferedCopy01()
-    {
+    public void testBufferedCopy01() {
         BufferedReader br = null;
         BufferedWriter bw = null;
 
-        try
-        {
+        try {
             br = new BufferedReader(new FileReader("e:/2023-io/sort.txt"));
             bw = new BufferedWriter(new FileWriter("e:/2023-io/bwCopy2.txt"));
             String length = "";
             // 边读边写
-            while ((length = br.readLine()) != null)
-            {
+            while ((length = br.readLine()) != null) {
                 bw.write(length);
                 bw.newLine();
             }
             System.out.println("拷贝成功");
-        } catch (IOException e)
-        {
+        } catch (IOException e) {
             e.printStackTrace();
         } finally {
             // 关闭资源
-            if (br != null)
-            {
-                try
-                {
+            if (br != null) {
+                try {
                     br.close();
-                } catch (IOException e)
-                {
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-            if (bw != null)
-            {
-                try
-                {
+            if (bw != null) {
+                try {
                     bw.close();
-                } catch (IOException e)
-                {
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
             }

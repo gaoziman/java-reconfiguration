@@ -1,6 +1,7 @@
 package com.Leo.io.utils;
 
 import org.apache.commons.lang3.time.StopWatch;
+
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -11,7 +12,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class TimeConsuming {
 
-    public static long time(Runnable method){
+    public static long time(Runnable method) {
         StopWatch stopWatch = new StopWatch();
         // 开始时间
         stopWatch.start();

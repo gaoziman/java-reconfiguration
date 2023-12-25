@@ -11,14 +11,14 @@ import java.io.StringWriter;
  * @version 1.0
  * @date 2023/9/25/025 10:33
  * @description : FileWriter 相关操作
- *--------------------------------------------------------
-      1)new FileWriter(File/String):覆盖摸式，相当于流的指针在首端
-      2)new FileWriter(File/String,true):追加模式，相当于流的指针在尾端
-      3)write(int):写入单个字符
-      4)write(char[I):写入指定数组
-      5)write(char【】,off,Ien):写入指定数组的指定部分
-      6)write(string):写入整个字符串
-      7)write(string,off,len):写入字符串的指定部分
+ * --------------------------------------------------------
+ * 1)new FileWriter(File/String):覆盖摸式，相当于流的指针在首端
+ * 2)new FileWriter(File/String,true):追加模式，相当于流的指针在尾端
+ * 3)write(int):写入单个字符
+ * 4)write(char[I):写入指定数组
+ * 5)write(char【】,off,Ien):写入指定数组的指定部分
+ * 6)write(string):写入整个字符串
+ * 7)write(string,off,len):写入字符串的指定部分
  * ----------------------------------------------------------
  */
 public class FileWriter01 {
@@ -27,15 +27,13 @@ public class FileWriter01 {
     }
 
 
-
     /**
-    * 用于测试: FileWriter读取文件
-    */
+     * 用于测试: FileWriter读取文件
+     */
     @Test
-    public void testFileWriter01()
-    {
+    public void testFileWriter01() {
 
-        FileWriter fw  = null;
+        FileWriter fw = null;
 
         try {
             // 创建 FileWriter 对象
@@ -45,7 +43,7 @@ public class FileWriter01 {
             fw.write('L');
 
             // 2. write(char[I):写入指定数组
-            char[] chars = {'L','e','o'};
+            char[] chars = {'L', 'e', 'o'};
             fw.write(chars);
 
             // 3. write(char【】,off,Ien):写入指定数组的指定部分

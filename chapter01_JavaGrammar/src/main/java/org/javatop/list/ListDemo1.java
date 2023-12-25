@@ -28,7 +28,7 @@ public class ListDemo1 {
 //        System.out.println("原来的集合 = " + list);
 //        new HashSet<>(list).forEach(s-> System.out.print(s));
 
-        list.stream().filter(s -> s.length() >3)
+        list.stream().filter(s -> s.length() > 3)
                 .forEach(System.out::println);
 
 //        method(list);
@@ -37,7 +37,8 @@ public class ListDemo1 {
 
     /**
      * 自定义去重
-     * @param list  1
+     *
+     * @param list 1
      */
     public static void method(List<String> list) {
         // 新集合

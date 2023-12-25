@@ -28,6 +28,7 @@ public class ListDemo5 {
 
     /**
      * 使用 TreeSet 去重(无序)
+     *
      * @param list
      */
     public static void method(List<Integer> list) {

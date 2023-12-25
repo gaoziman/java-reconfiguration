@@ -65,7 +65,7 @@ public class MyThreadTest {
         }).start();
 
         // 简化形式 lambda
-        new Thread(()->{
+        new Thread(() -> {
             for (int i = 1; i <= 5; i++) {
                 System.err.println("子线程2:" + i);
             }
@@ -79,17 +79,16 @@ public class MyThreadTest {
     }
 
 
-
     /**
-     *  用于测试:collable接口
+     * 用于测试:collable接口
      */
     @Test
     public void test04() throws ExecutionException, InterruptedException {
 
-      Callable<String> callable = new  MyThread03(100);
+        Callable<String> callable = new MyThread03(100);
 
         //创建未来任务对象 FutureTask实现类Runnable接口
-        FutureTask<String> f1 =  new FutureTask<>(callable);
+        FutureTask<String> f1 = new FutureTask<>(callable);
         new Thread(f1).start();
 
 
@@ -100,9 +99,8 @@ public class MyThreadTest {
     }
 
 
-
     /**
-     *  用于测试:
+     * 用于测试:
      */
     @Test
     public void test05() {
@@ -117,11 +115,10 @@ public class MyThreadTest {
         t2.start();
 
 
-
         // 获得主线程名称
         String name = Thread.currentThread().getName();
         for (int i = 1; i <= 5; i++) {
-            System.err.println( name + "输出:" + i);
+            System.err.println(name + "输出:" + i);
         }
     }
 }

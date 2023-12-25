@@ -22,7 +22,7 @@ public class ArraySelectSort {
     @Test
     public void testSelectSort01() {
 
-        int[] arr = {73, 88, 41, 23, 93, 14, 25, 3,10, 4, 2,1};
+        int[] arr = {73, 88, 41, 23, 93, 14, 25, 3, 10, 4, 2, 1};
 
         int temp = 0;
 
@@ -37,7 +37,7 @@ public class ArraySelectSort {
                     // 最小的是J ，并将其与后面所有元素进行交换
                     min = j;
                 }
-                if (min != i){
+                if (min != i) {
                     temp = arr[min];
                     arr[min] = arr[i];
                     arr[i] = temp;
