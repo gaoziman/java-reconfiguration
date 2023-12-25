@@ -55,13 +55,12 @@ public class Homework05 {
             int j = (int) (Math.random() * 100 + 1);
             System.out.println("j = " + j);
         }
-        
+
         // 停止计时
-         sw.stop();
-        
+        sw.stop();
+
         // 1002ms
         System.out.println(sw.getTotalTimeSeconds());
-        
 
 
     }
